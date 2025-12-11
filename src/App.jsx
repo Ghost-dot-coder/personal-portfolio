@@ -2,7 +2,6 @@
 import React from "react";
 import { motion, useScroll } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
-
 import Hero from "./components/Hero";
 import TechMarquee from "./components/TechMarquee";
 import Projects from "./components/Projects";

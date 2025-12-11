@@ -1,7 +1,6 @@
 // App.jsx
 import React from "react";
 import { motion, useScroll } from "framer-motion";
-import { Github, Linkedin } from "lucide-react";
 import Hero from "./components/Hero";
 import TechMarquee from "./components/TechMarquee";
 import Projects from "./components/Projects";
@@ -112,27 +111,24 @@ function App() {
       >
         <div className="max-w-6xl mx-auto px-4 lg:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[0.8rem] opacity-80">
           <p>
-            © {new Date().getFullYear()} · Designed &amp; built by Manu
-            Babychan
+            © {new Date().getFullYear()} · Designed &amp; built by Manu Babychan
           </p>
           <p className="flex gap-4">
             <a
               href="https://github.com/Ghost-dot-coder"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1 hover:text-cyan-400 transition-colors"
+              className="hover:text-cyan-400 transition-colors"
             >
-              <Github className="h-4 w-4" />
-              <span>GitHub</span>
+              GitHub
             </a>
             <a
               href="https://linkedin.com/manu-babychan"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1 hover:text-cyan-400 transition-colors"
+              className="hover:text-cyan-400 transition-colors"
             >
-              <Linkedin className="h-4 w-4" />
-              <span>LinkedIn</span>
+              LinkedIn
             </a>
           </p>
         </div>

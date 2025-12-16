@@ -60,14 +60,14 @@ export const projects = [
     type: "Landing Page",
   },
   {
-    title: "React Chat App",
-    role: "React Developer",
-    stack: ["React", "Vite", "JavaScript"],
+    title: "Real-Time Chat Application",
+    role: "Frontend Developer",
+    stack: ["React", "Vite", "JavaScript", "WebSockets", "Node.js"],
     description:
-      "An in-progress chat interface experiment built with React and Vite, focusing on layout and component structure.",
+      "A real-time chat application built with React and WebSockets, featuring room-based messaging, live presence updates, and typing indicators.",
     highlight:
-      "Foundation for a real-time chat UI with reusable components and a clean project structure.",
-    link: "https://github.com/Ghost-dot-coder/Chat-app-REACT",
+      "Implements a custom WebSocket architecture with dynamic room creation, shareable room codes, and a responsive, modern chat UI.",
+    link: "https://chat-app-react-front-end.vercel.app",
     type: "Web App",
   },
   {

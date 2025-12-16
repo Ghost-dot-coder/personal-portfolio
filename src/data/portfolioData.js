@@ -45,7 +45,39 @@ export const projects = [
       "A sleek one-page experience for a real-estate brand focusing on clarity and scroll-based storytelling.",
     highlight:
       "Reusable sections, scroll motion and a layout built for conversions.",
-    link: "#",
+    link: "https://www.rentsetters.in/",
+    type: "Web App",
+  },
+  {
+    title: "Manifest Travel Landing Page",
+    role: "Frontend Developer",
+    stack: ["HTML", "CSS", "JavaScript"],
+    description:
+      "A modern travel website concept focused on destinations, experiences and clear call-to-actions.",
+    highlight:
+      "Hero-driven layout with sections designed for tours, highlights and trust-building content.",
+    link: "https://manifest-a-travel-website.vercel.app/",
+    type: "Landing Page",
+  },
+  {
+    title: "React Chat App",
+    role: "React Developer",
+    stack: ["React", "Vite", "JavaScript"],
+    description:
+      "An in-progress chat interface experiment built with React and Vite, focusing on layout and component structure.",
+    highlight:
+      "Foundation for a real-time chat UI with reusable components and a clean project structure.",
+    link: "https://github.com/Ghost-dot-coder/Chat-app-REACT",
+    type: "Web App",
+  },
+  {
+    title: "Car Sales Web Application",
+    role: "React Developer",
+    stack: ["React", "JSON Server", "REST"],
+    description:
+      "Browse, filter and manage car listings with proper CRUD and responsive layouts.",
+    highlight: "State-driven components with a mock REST backend.",
+    link: "https://github.com/Ghost-dot-coder/wheelz-front-end",
     type: "Web App",
   },
   {
@@ -69,27 +101,7 @@ export const projects = [
     link: "https://github.com/Ghost-dot-coder/Smart-Water-Monitoring-and-control-App",
     type: "IoT + Mobile",
   },
-  {
-    title: "Car Sales Web Application",
-    role: "React Developer",
-    stack: ["React", "JSON Server", "REST"],
-    description:
-      "Browse, filter and manage car listings with proper CRUD and responsive layouts.",
-    highlight: "State-driven components with a mock REST backend.",
-    link: "https://github.com/Ghost-dot-coder/wheelz-front-end",
-    type: "Web App",
-  },
-  {
-    title: "Manifest Travel Landing Page",
-    role: "Frontend Developer",
-    stack: ["HTML", "CSS", "JavaScript"],
-    description:
-      "A modern travel website concept focused on destinations, experiences and clear call-to-actions.",
-    highlight:
-      "Hero-driven layout with sections designed for tours, highlights and trust-building content.",
-    link: "https://github.com/Ghost-dot-coder/-manifest---a-travel-website",
-    type: "Landing Page",
-  },
+
   {
     title: "BMI Calculator",
     role: "Frontend Developer",
@@ -100,17 +112,6 @@ export const projects = [
       "Clean card-based UI with instant feedback for different health ranges.",
     link: "https://github.com/Ghost-dot-coder/BMI-calculator",
     type: "Utility Tool",
-  },
-  {
-    title: "React Chat App (WIP)",
-    role: "React Developer",
-    stack: ["React", "Vite", "JavaScript"],
-    description:
-      "An in-progress chat interface experiment built with React and Vite, focusing on layout and component structure.",
-    highlight:
-      "Foundation for a real-time chat UI with reusable components and a clean project structure.",
-    link: "https://github.com/Ghost-dot-coder/Chat-app-REACT",
-    type: "Web App",
   },
 ];
 

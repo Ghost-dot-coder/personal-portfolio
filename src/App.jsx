@@ -8,7 +8,6 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Journey from "./components/Journey";
 import Contact from "./components/Contact";
-import CommandPalette from "./components/CommandPalette";
 import Navbar from "./components/Navbar";
 
 const RESUME_URL = "/Manu_Babychan_Resume.pdf";
@@ -16,7 +15,6 @@ const RESUME_URL = "/Manu_Babychan_Resume.pdf";
 function App() {
   const { scrollYProgress } = useScroll();
   const [theme, setTheme] = React.useState("dark");
-  const [isCommandOpen, setIsCommandOpen] = React.useState(false);
 
   const isDark = theme === "dark";
 
@@ -33,27 +31,6 @@ function App() {
     window.location.href = "mailto:manubabychan02@gmail.com";
   };
 
-  // Keyboard shortcut for command palette
-  React.useEffect(() => {
-    const listener = (e) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-        e.preventDefault();
-        setIsCommandOpen((prev) => !prev);
-      }
-    };
-    window.addEventListener("keydown", listener);
-    return () => window.removeEventListener("keydown", listener);
-  }, []);
-
-  const handleCommandAction = (action) => {
-    if (action === "toggle-theme") {
-      toggleTheme();
-    } else if (action.startsWith("goto:")) {
-      const id = action.replace("goto:", "");
-      scrollToSection(id);
-    }
-    setIsCommandOpen(false);
-  };
 
   return (
     <div
@@ -134,12 +111,6 @@ function App() {
         </div>
       </footer>
 
-      <CommandPalette
-        open={isCommandOpen}
-        onClose={() => setIsCommandOpen(false)}
-        onAction={handleCommandAction}
-        isDark={isDark}
-      />
     </div>
   );
 }

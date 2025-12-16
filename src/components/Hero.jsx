@@ -1,5 +1,4 @@
 // components/Hero.jsx
-import React from "react";
 import { motion } from "framer-motion";
 import {
   Sparkles,
@@ -18,7 +17,7 @@ const Hero = ({ isDark, onNavigate }) => {
   return (
     <section
       id="hero"
-      className="relative max-w-6xl mx-auto px-4 lg:px-6 pt-16 sm:pt-20 pb-12 sm:pb-16"
+      className="relative max-w-6xl mx-auto px-4 lg:px-6 pt-16 pb-12 sm:pb-16"
     >
       {/* soft background glow */}
       <motion.div
@@ -99,7 +98,11 @@ const Hero = ({ isDark, onNavigate }) => {
             <motion.div
               className="absolute -right-3 bottom-8 h-6 w-6 rounded-full bg-cyan-400/80 shadow-lg shadow-cyan-500/50"
               animate={{ y: [0, -7, 0], opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
+              transition={{
+                duration: 3.2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
           </motion.div>
         </motion.div>
@@ -215,9 +218,7 @@ const Hero = ({ isDark, onNavigate }) => {
             </button>
 
             <div className="flex items-center gap-3 text-[0.85rem]">
-              <span
-                className={isDark ? "text-slate-400" : "text-slate-500"}
-              >
+              <span className={isDark ? "text-slate-400" : "text-slate-500"}>
                 Social
               </span>
               <div className="flex items-center gap-2">

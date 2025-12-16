@@ -70,7 +70,7 @@ function App() {
       />
 
       {/* Main content */}
-      <main className="pt-24 pb-20">
+      <main className="pt-16 pb-20">
         <Hero isDark={isDark} onNavigate={scrollToSection} />
         <TechMarquee isDark={isDark} />
         <Projects isDark={isDark} />

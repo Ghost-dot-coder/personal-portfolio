@@ -1,4 +1,3 @@
-// App.jsx
 import React from "react";
 import { motion, useScroll } from "framer-motion";
 import Hero from "./components/Hero";

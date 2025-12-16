@@ -12,7 +12,7 @@ import {
 import Section from "./Section";
 import { fadeUp } from "../utils/animations";
 
-const FORMSPREE_URL = "https://formspree.io/f/xrbnwgow"; // ⬅️ replace
+const FORMSPREE_URL = "https://formspree.io/f/xrbnwgow"; 
 
 const Contact = ({ isDark }) => {
   const [form, setForm] = React.useState({
@@ -21,7 +21,7 @@ const Contact = ({ isDark }) => {
     message: "",
   });
 
-  const [status, setStatus] = React.useState("idle"); // idle | sending | success | error
+  const [status, setStatus] = React.useState("idle"); 
   const [errors, setErrors] = React.useState({});
 
   const validate = () => {
@@ -136,7 +136,7 @@ const Contact = ({ isDark }) => {
             className={`w-fit px-6 py-2.5 rounded-full text-[0.85rem] font-semibold flex items-center gap-2 ${
               status === "sending"
                 ? "opacity-60 cursor-not-allowed"
-                : "bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 shadow-lg"
+                : "bg-linear-to-r from-cyan-500 to-emerald-500 text-slate-950 shadow-lg"
             }`}
           >
             {status === "sending" ? "Sending..." : "Send message"}
